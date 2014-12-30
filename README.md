@@ -6,7 +6,7 @@ Simple async calls for Open Weather Map api.
 How to use it
 ===========
 
-`from tornadowm import forecast, get_result, result`
+`from tornadowm import *`
 
 `forecast('daily', q='azazga', cnt=5, lang='fr') # make  the call`
 
