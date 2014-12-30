@@ -14,6 +14,8 @@ How to use it
 
 `result # print the result`
 
+for more informations: http://www.openweathermap.com/api
+
 
 Important to know
 ===========
