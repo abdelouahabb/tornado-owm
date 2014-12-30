@@ -17,7 +17,7 @@ way = ''
 def forecast(way, **kwargs):
     '''forecast(way, optional_arguments)
 
-    way = [weather, daily, forecast, find, group];
+    way = [weather, daily, forecast, find];
     forecast: you can get weather forecast for 5 days with data every 3 hours.
     daily: you can get daily weather forecast up to 16 days (using cnt).
     find:
