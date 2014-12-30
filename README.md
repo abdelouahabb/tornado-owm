@@ -14,7 +14,9 @@ How to use it
 
 `result # print the result`
 
-for more informations: http://www.openweathermap.com/api
+What? it dident work? because you need to be inside Tornado's IOLoop, the easiest way to do it, is using IPython QT Console, or, Spyder.
+
+for more informations about open weather map : http://www.openweathermap.com/api
 
 
 Important to know
