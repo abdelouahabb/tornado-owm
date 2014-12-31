@@ -62,7 +62,6 @@ def forecast(way, **kwargs):
         print 'The API link is: ' + api
 
         def handle_request(resp):
-            global api
             global response
             if resp.error:
                 print "Error:", resp.error
