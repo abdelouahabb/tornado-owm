@@ -6,13 +6,14 @@ Simple async calls for Open Weather Map api.
 How to use it
 ===========
 
-`from tornadowm import *`
+`import tornadowm `
+`# dont use from tornadowm import * it is evil ^_^ http://stackoverflow.com/questions/27714840/how-to-deal-with-globals-in-modules/`
 
-`forecast('daily', q='azazga', cnt=5, lang='fr') # make  the call`
+`tornadowm.forecast('daily', q='azazga', cnt=5, lang='fr') # make  the call`
 
-`get_result() # check the validity of the result, else, the result will be saved into variable result`
+`tornadowm.get_result() # check the validity of the result, else, the result will be saved into variable result`
 
-`result # print the result`
+`tornadowm.result # print the result`
 
 What? it dident work? because you need to be inside Tornado's IOLoop, the easiest way to do it, is using IPython QT Console, or, Spyder.
 
