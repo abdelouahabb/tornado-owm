@@ -59,9 +59,10 @@ def forecast(way, **kwargs):
             args.append('&{0}={1}'.format(i, j))
         a = ''.join(set(args))
         api = (link + way + a.replace(' ', '+')).replace('?&', '?')
-        print 'The API link is: '+api
+        print 'The API link is: ' + api
 
         def handle_request(resp):
+            global api
             global response
             if resp.error:
                 print "Error:", resp.error
