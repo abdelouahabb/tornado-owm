@@ -17,7 +17,7 @@ way = ''
 def forecast(way, **kwargs):
     '''forecast(way, optional_arguments)
 
-    way = [weather, daily, forecast, find];
+    way = [weather, daily, forecast, find, group];
     forecast: you can get weather forecast for 5 days with data every 3 hours.
     daily: you can get daily weather forecast up to 16 days (using cnt).
     find:
@@ -58,7 +58,8 @@ def forecast(way, **kwargs):
         for i, j in kwargs.iteritems():
             args.append('&{0}={1}'.format(i, j))
         a = ''.join(set(args))
-        api = link + way + a.replace(' ', '+')
+        api = (link + way + a.replace(' ', '+')).replace('?&', '?')
+        print 'The API link is: '+api
 
         def handle_request(resp):
             global response
